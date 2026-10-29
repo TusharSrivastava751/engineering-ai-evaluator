@@ -1,0 +1,232 @@
+{
+  "demo": true,
+  "method": "structured-answer-checks-v1",
+  "summary": {
+    "all": {
+      "cases": 12,
+      "answers_present": 12,
+      "task_result_passes": 8,
+      "all_structural_passes": 6,
+      "structural_pass_rate": 0.5
+    },
+    "development": {
+      "cases": 8,
+      "answers_present": 8,
+      "task_result_passes": 5,
+      "all_structural_passes": 4,
+      "structural_pass_rate": 0.5
+    },
+    "holdout": {
+      "cases": 4,
+      "answers_present": 4,
+      "task_result_passes": 3,
+      "all_structural_passes": 2,
+      "structural_pass_rate": 0.5
+    }
+  },
+  "results": [
+    {
+      "id": "D01",
+      "split": "development",
+      "kind": "numeric",
+      "checks": {
+        "task_result": true,
+        "citation_ids": true,
+        "reasoning_present": true
+      },
+      "all_structural_checks_pass": true,
+      "converted_value": 0.15,
+      "expected_unit": "m3/s",
+      "findings": [],
+      "human_review_required": true
+    },
+    {
+      "id": "D02",
+      "split": "development",
+      "kind": "numeric",
+      "checks": {
+        "task_result": false,
+        "citation_ids": true,
+        "reasoning_present": true
+      },
+      "all_structural_checks_pass": false,
+      "converted_value": 250.0,
+      "expected_unit": "m3/s",
+      "findings": [
+        "NUMERIC_ERROR"
+      ],
+      "human_review_required": true
+    },
+    {
+      "id": "D03",
+      "split": "development",
+      "kind": "numeric",
+      "checks": {
+        "task_result": true,
+        "citation_ids": true,
+        "reasoning_present": true
+      },
+      "all_structural_checks_pass": true,
+      "converted_value": 240.0,
+      "expected_unit": "m3",
+      "findings": [],
+      "human_review_required": true
+    },
+    {
+      "id": "D04",
+      "split": "development",
+      "kind": "numeric",
+      "checks": {
+        "task_result": false,
+        "citation_ids": true,
+        "reasoning_present": true
+      },
+      "all_structural_checks_pass": false,
+      "converted_value": 1.9994,
+      "expected_unit": "m",
+      "findings": [
+        "NUMERIC_ERROR"
+      ],
+      "human_review_required": true
+    },
+    {
+      "id": "D05",
+      "split": "development",
+      "kind": "abstain",
+      "checks": {
+        "task_result": false,
+        "citation_ids": true,
+        "reasoning_present": true
+      },
+      "all_structural_checks_pass": false,
+      "converted_value": null,
+      "expected_unit": null,
+      "findings": [
+        "UNSUPPORTED_RESULT_ON_INSUFFICIENT_INFORMATION"
+      ],
+      "human_review_required": true
+    },
+    {
+      "id": "D06",
+      "split": "development",
+      "kind": "abstain",
+      "checks": {
+        "task_result": true,
+        "citation_ids": true,
+        "reasoning_present": true
+      },
+      "all_structural_checks_pass": true,
+      "converted_value": null,
+      "expected_unit": null,
+      "findings": [],
+      "human_review_required": true
+    },
+    {
+      "id": "D07",
+      "split": "development",
+      "kind": "numeric",
+      "checks": {
+        "task_result": true,
+        "citation_ids": false,
+        "reasoning_present": true
+      },
+      "all_structural_checks_pass": false,
+      "converted_value": 15000.0,
+      "expected_unit": "m2",
+      "findings": [
+        "MISSING_OR_UNKNOWN_CITATION_ID"
+      ],
+      "human_review_required": true
+    },
+    {
+      "id": "D08",
+      "split": "development",
+      "kind": "numeric",
+      "checks": {
+        "task_result": true,
+        "citation_ids": true,
+        "reasoning_present": true
+      },
+      "all_structural_checks_pass": true,
+      "converted_value": 0.0,
+      "expected_unit": "m3/s",
+      "findings": [],
+      "human_review_required": true
+    },
+    {
+      "id": "H01",
+      "split": "holdout",
+      "kind": "numeric",
+      "checks": {
+        "task_result": true,
+        "citation_ids": true,
+        "reasoning_present": true
+      },
+      "all_structural_checks_pass": true,
+      "converted_value": 0.48,
+      "expected_unit": "m3/s",
+      "findings": [],
+      "human_review_required": true
+    },
+    {
+      "id": "H02",
+      "split": "holdout",
+      "kind": "numeric",
+      "checks": {
+        "task_result": true,
+        "citation_ids": true,
+        "reasoning_present": false
+      },
+      "all_structural_checks_pass": false,
+      "converted_value": 120.0,
+      "expected_unit": "m3",
+      "findings": [
+        "EMPTY_REASONING"
+      ],
+      "human_review_required": true
+    },
+    {
+      "id": "H03",
+      "split": "holdout",
+      "kind": "numeric",
+      "checks": {
+        "task_result": true,
+        "citation_ids": true,
+        "reasoning_present": true
+      },
+      "all_structural_checks_pass": true,
+      "converted_value": 0.4,
+      "expected_unit": "m",
+      "findings": [],
+      "human_review_required": true
+    },
+    {
+      "id": "H04",
+      "split": "holdout",
+      "kind": "abstain",
+      "checks": {
+        "task_result": false,
+        "citation_ids": true,
+        "reasoning_present": true
+      },
+      "all_structural_checks_pass": false,
+      "converted_value": null,
+      "expected_unit": null,
+      "findings": [
+        "UNSUPPORTED_RESULT_ON_INSUFFICIENT_INFORMATION"
+      ],
+      "human_review_required": true
+    }
+  ],
+  "warning": "Synthetic fixture results, not model performance. Citation IDs do not establish source entailment. All answers need human review.",
+  "inputs": [
+    {
+      "file": "cases.jsonl",
+      "sha256": "35e96bbd3b779a23fbe24ec584c558664d030a932a2a601b615a90b8a27c5204"
+    },
+    {
+      "file": "synthetic_answers.jsonl",
+      "sha256": "6528ca104a58f8507fe36865cb00a47039a00ccd2c7061e8c97418fd7c4d0ca6"
+    }
+  ]
+}

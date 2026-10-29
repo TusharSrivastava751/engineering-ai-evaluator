@@ -1,0 +1,12 @@
+{"id": "D01", "value": 0.15, "unit": "m3/s", "abstain": false, "source_ids": ["SYN-RATIONAL"], "reasoning": "0.6 * 75 * 1.2 / 360 = 0.15 m3/s."}
+{"id": "D02", "value": 250, "unit": "m3/s", "abstain": false, "source_ids": ["SYN-UNITS"], "reasoning": "250 / 1000 = 0.25 m3/s."}
+{"id": "D03", "value": 240, "unit": "m3", "abstain": false, "source_ids": ["SYN-EARTHWORK"], "reasoning": "(10 + 14) / 2 * 20 = 240 m3."}
+{"id": "D04", "value": 1.9994, "unit": "m", "abstain": false, "source_ids": ["SYN-COVER"], "reasoning": "102 - 100 - 0.6 = 1.4 m."}
+{"id": "D05", "value": 300, "unit": "mm", "abstain": false, "source_ids": ["SYN-REVIEW"], "reasoning": "A 300 mm pipe will do."}
+{"id": "D06", "value": null, "unit": null, "abstain": true, "source_ids": ["SYN-EARTHWORK"], "reasoning": "Station spacing is needed for average-end-area volume."}
+{"id": "D07", "value": 15000, "unit": "m2", "abstain": false, "source_ids": ["MADE-UP-STANDARD"], "reasoning": "1 ha is 10000 m2."}
+{"id": "D08", "value": 0, "unit": "m3/s", "abstain": false, "source_ids": ["SYN-RATIONAL"], "reasoning": "The specified coefficient is zero, so this formula gives zero."}
+{"id": "H01", "value": 480, "unit": "L/s", "abstain": false, "source_ids": ["SYN-RATIONAL"], "reasoning": "0.8 * 90 * 2.4 / 360 = 0.48 m3/s."}
+{"id": "H02", "value": 120, "unit": "m3", "abstain": false, "source_ids": ["SYN-EARTHWORK"], "reasoning": ""}
+{"id": "H03", "value": 0.4, "unit": "m", "abstain": false, "source_ids": ["SYN-COVER"], "reasoning": "100.2 - 99.5 - 0.3 = 0.4 m."}
+{"id": "H04", "value": 1, "unit": "m", "abstain": false, "source_ids": ["SYN-REVIEW"], "reasoning": "Approved without checking."}

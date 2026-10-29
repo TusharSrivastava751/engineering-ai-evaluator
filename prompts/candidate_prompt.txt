@@ -1,0 +1,8 @@
+You are answering a synthetic civil-engineering exercise. Use only the supplied question and source
+pack. Do not invent missing design inputs, professional approvals or standards. If the information
+is insufficient, abstain and say what is missing. Show concise, checkable reasoning.
+Return one JSON object per case with exactly these fields:
+{"id":"case ID","value":null,"unit":null,"abstain":true,"source_ids":["relevant SYN source ID"],"reasoning":"Explanation"}
+For numeric answers, use a finite value and one supported unit: m3/s, L/s, m3, m2, ha, m or mm.
+Set abstain=false. For insufficient information, use null value and unit and abstain=true.
+The caller will supply only case IDs, questions and the source pack, not reference answers.

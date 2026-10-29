@@ -1,0 +1,11 @@
+{
+  "status": "unrun_template",
+  "model_id": null,
+  "run_date": null,
+  "temperature": null,
+  "prompt_version": null,
+  "source_pack_version": null,
+  "case_file_sha256": null,
+  "answer_file_sha256": null,
+  "reviewer_notes": null
+}
